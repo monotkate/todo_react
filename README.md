@@ -1,13 +1,21 @@
 # todo_react
+React 0.14
 
-## Setup
+## Getting started
 
-Run `npm install` to install all the node and the bower dependencies.
+Once the repository has been cloned, run `npm install` to install all the dependencies. This project uses express for the server side code and React, Material UI and ES2015 (through Babel) for the front end. This project also uses gulp to automate tasks.
 
-## Running
+Running `gulp` will print out the common tasks for the project. To get started, `gulp build` will build `*.jsx` files in `src/` and dependencies into `dist/bundle.js`. Additionally, `gulp watch` will rebuild the `.jsx` files when there are changes.
 
-Run `npm start` to compile the jsx files and put them in the `dist/` folder and also start `http-server` on port 8080.
+`gulp serve` will start the node express server which is listening on port 8080.
 
-You can also run `npm run babel` to just compile the jsx or `npm run babel-watch` to watch for changes and compile them. There is also `npm run server` which only starts up the server, doesn't compile (helpful if you have babel watching for changes).
+If not in active development, `gulp start` will build the project and start the node server. For active develpment, `gulp watch` and `gulp serve` are suggested as they rebuild the client code on changes to the `*.jsx` and the server code on changes to `server/server.js`.
 
-Finally, there is `npm run clean` which will delete the dist folder, as well as anything not checked into version control like the node modules and bower components. Running the app after this will require an `npm install`.
+## Cleaning
+
+Running a `gulp clean:dist` will remove the `dist/` folder. `gulp clean` is an alias for `gulp clean:dist`. The `node_modules` folder can be cleaned up using `gulp clean:modules` and both the build folder and the node modules folder can be cleaned up using `gulp clean:all`.
+
+## Useful links
+* [React Docs](https://facebook.github.io/react/docs/getting-started.html)
+* [browserify Docs](https://github.com/substack/node-browserify#usage)
+* [Babel Options](https://babeljs.io/docs/usage/options/)
