@@ -1,0 +1,17 @@
+{
+  "name": "todo_react",
+  "description": "Getting started with React.js",
+  "main": "index.html",
+  "authors": [
+    "monotkate <mo.not.kate@gmail.com>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/monotkate/todo_react",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "react": "~0.14.7",
+    "jquery": "^2.2.1",
+    "bootstrap": "^3.3.6"
+  }
+}
