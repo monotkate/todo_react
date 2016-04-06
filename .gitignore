@@ -1,3 +1,9 @@
+# bower
+bower_components
+src/lib
+
+# build folders
+dist/
 
 # Created by https://www.gitignore.io/api/windows,osx,sublimetext,node
 
